@@ -1,0 +1,133 @@
+/* 전반적인 배경 구성 - 신뢰감을 주는 딥 네이비 & 라벤더 그라데이션 */
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 자기소개 카드 스타일 */
+.profile-card {
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    width: 380px;
+    overflow: hidden; /* 상단 데코레이션 곡률을 위해 필수 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 카드 상단 포인트 색상 바 */
+.card-header-deco {
+    height: 12px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* 내부 패딩 설정 */
+.card-body {
+    padding: 35px 30px;
+    text-align: center;
+}
+
+/* 프로필 이모지 컨테이너 */
+.avatar-container {
+    width: 90px;
+    height: 90px;
+    background-color: #f3f0ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    margin: 0 auto 20px auto;
+    border: 3px solid #e5dbff;
+}
+
+/* 텍스트 및 레이아웃 스타일 */
+.name {
+    font-size: 26px;
+    color: #2d3748;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.university {
+    font-size: 15px;
+    color: #6b7280;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+
+/* 구분선 */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #edf2f7;
+    margin-bottom: 20px;
+}
+
+/* 자기소개 본문 스타일 */
+.bio {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+    text-align: left; /* 가독성을 위해 본문은 좌측 정렬 */
+    margin: 0 0 12px 0;
+    word-break: keep-all; /* 한글 단어가 어색하게 깨지는 것 방지 */
+}
+
+.bio strong {
+    color: #764ba2;
+    font-weight: 600;
+}
+
+.highlight-text {
+    font-weight: 500;
+    color: #2d3748;
+}
+
+/* 기획자 역량 태그 디자인 */
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px 0 25px 0;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+}
+
+/* 하단 버튼 디자인 */
+.action-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(118, 75, 162, 0.2);
+    transition: opacity 0.2s ease;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
